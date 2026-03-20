@@ -4,12 +4,12 @@
 
 `ChronoKit` 是一个面向 Swift 开发者的时间处理工具库，提供时间格式化、时间戳转换、日期边界计算、时间比较、时区换算、ISO8601、工作日/节假日规则等能力。
 
-仓库同时提供两种使用方式：
+`ChronoKit` 同时提供两种使用方式：
 
 - Swift Package：适合把 `ChronoKit` 当作库接入项目
 - Xcode Demo 工程：适合直接运行和查看能力展示
 
-## Features
+## Why ChronoKit
 
 - 获取当前时间、时间戳、时间快照
 - 时间字符串与 `Date`、Unix 时间戳双向转换
@@ -21,6 +21,22 @@
 - 指定时区格式化与跨时区时间转换
 - 周末、节假日、调休工作日、自定义业务日规则
 - 模块化 API，避免时间方法平铺堆积
+
+## Quick Start
+
+```swift
+import ChronoKit
+
+let manager = TimeManager()
+
+let text = manager.currentString(format: "yyyy-MM-dd HH:mm:ss")
+let iso = manager.iso8601String(from: manager.currentDate())
+let snapshot = manager.currentSnapshot()
+
+print(text)
+print(iso)
+print(snapshot.weekdayText)
+```
 
 ## Requirements
 
@@ -53,28 +69,9 @@
 import ChronoKit
 ```
 
-## Quick Start
+## API Overview
 
-```swift
-import ChronoKit
-
-let manager = TimeManager()
-
-let now = manager.currentString(format: "yyyy-MM-dd HH:mm:ss")
-let timestamp = manager.currentTimestamp(inMilliseconds: true)
-let weekday = manager.currentWeekday(style: .chinese)
-let snapshot = manager.currentSnapshot()
-
-print(now)
-print(timestamp)
-print(weekday)
-print(snapshot.formatted)
-print(snapshot.quarter, snapshot.weekOfYear, snapshot.dayOfYear)
-```
-
-## Recommended API Style
-
-`ChronoKit` 现在推荐通过模块入口访问能力，而不是把所有方法都当成一个平铺工具类来记。
+推荐优先通过模块入口访问能力，而不是把所有方法都当成一个平铺工具类来记。
 
 模块入口包括：
 
@@ -161,6 +158,14 @@ print(manager.business.isWorkday(targetDate))
 print(manager.business.nextWorkday(after: targetDate) ?? targetDate)
 ```
 
+## Demo
+
+仓库内提供可直接运行的示例工程：
+
+- 工程路径：`Demo/ExampleApp.xcodeproj`
+- App target：`ExampleApp`
+- 打开后选择任意 iOS Simulator，按 `Command + R` 即可运行
+
 ## Compatibility Notes
 
 为了兼容已有调用，`TimeManager` 仍然保留了一层常用快捷方法，例如：
@@ -173,21 +178,6 @@ print(manager.business.nextWorkday(after: targetDate) ?? targetDate)
 - `isWorkday(_:)`
 
 如果是新代码，建议优先使用模块化入口。
-
-## Xcode Demo
-
-仓库内提供可直接运行的示例工程：
-
-- 工程文件：`ExampleApp.xcodeproj`
-- 工程路径：`Demo/ExampleApp.xcodeproj`
-- App target：`ExampleApp`
-
-运行方式：
-
-1. 打开 `Demo/ExampleApp.xcodeproj`
-2. 选择 `ExampleApp` scheme
-3. 选择任意 iOS Simulator
-4. 按 `Command + R` 运行
 
 ## Project Structure
 
@@ -208,6 +198,15 @@ Package.swift
 
 ```bash
 swift test
+```
+
+Demo 编译验证：
+
+```bash
+xcodebuild -scheme ExampleApp \
+  -project Demo/ExampleApp.xcodeproj \
+  -destination 'id=0B2CBF66-8002-436C-9EFD-42AE63930178' \
+  build CODE_SIGNING_ALLOWED=NO
 ```
 
 ## Design Notes

@@ -1,48 +1,31 @@
 <svg width="1280" height="640" viewBox="0 0 1280 640" fill="none" xmlns="http://www.w3.org/2000/svg">
   <defs>
     <linearGradient id="bg" x1="0" y1="0" x2="1280" y2="640" gradientUnits="userSpaceOnUse">
-      <stop stop-color="#0B2D4A"/>
-      <stop offset="1" stop-color="#1D5675"/>
+      <stop stop-color="#123236"/>
+      <stop offset="1" stop-color="#0A1C1F"/>
     </linearGradient>
-    <radialGradient id="glow1" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(280 170) rotate(51) scale(340 250)">
-      <stop stop-color="#3DD6D0" stop-opacity="0.45"/>
-      <stop offset="1" stop-color="#3DD6D0" stop-opacity="0"/>
+    <radialGradient id="glow" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1024 96) rotate(90) scale(260 320)">
+      <stop stop-color="rgba(188,232,255,0.16)"/>
+      <stop offset="1" stop-color="rgba(255,255,255,0)"/>
     </radialGradient>
-    <radialGradient id="glow2" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1040 500) rotate(180) scale(360 280)">
-      <stop stop-color="#FFC454" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#FFC454" stop-opacity="0"/>
-    </radialGradient>
-    <filter id="blur" x="0" y="0" width="1280" height="640" filterUnits="userSpaceOnUse">
-      <feGaussianBlur stdDeviation="30"/>
-    </filter>
   </defs>
   <rect width="1280" height="640" rx="36" fill="url(#bg)"/>
-  <g filter="url(#blur)">
-    <ellipse cx="280" cy="170" rx="240" ry="180" fill="url(#glow1)"/>
-    <ellipse cx="1040" cy="500" rx="260" ry="200" fill="url(#glow2)"/>
-  </g>
-  <rect x="70" y="58" width="1140" height="524" rx="32" fill="white" fill-opacity="0.05" stroke="white" stroke-opacity="0.12"/>
-  <g transform="translate(120 120)">
-    <rect x="0" y="0" width="280" height="280" rx="66" fill="white" fill-opacity="0.08" stroke="white" stroke-opacity="0.18"/>
-    <circle cx="140" cy="140" r="108" fill="#F4FAFC"/>
-    <circle cx="140" cy="140" r="108" stroke="white" stroke-opacity="0.45" stroke-width="4"/>
-    <path d="M140 65V92" stroke="#113D58" stroke-width="10" stroke-linecap="round"/>
-    <path d="M140 188V140" stroke="#113D58" stroke-width="14" stroke-linecap="round"/>
-    <path d="M140 140L194 103" stroke="#227A9E" stroke-width="14" stroke-linecap="round"/>
-    <circle cx="140" cy="140" r="18" fill="#FFC454" stroke="white" stroke-width="4"/>
-    <path d="M45 95C73 57 108 38 146 33C186 28 223 41 252 72" stroke="#3DD6D0" stroke-width="16" stroke-linecap="round"/>
-  </g>
-  <g transform="translate(460 154)">
-    <text x="0" y="84" fill="white" font-size="84" font-family="Avenir Next, SF Pro Display, Helvetica, Arial, sans-serif" font-weight="700">ChronoKit</text>
-    <text x="0" y="154" fill="#D9EEF2" font-size="30" font-family="Avenir Next, SF Pro Text, Helvetica, Arial, sans-serif">A Swift time toolkit for formatting, ranges, comparisons,</text>
-    <text x="0" y="194" fill="#D9EEF2" font-size="30" font-family="Avenir Next, SF Pro Text, Helvetica, Arial, sans-serif">time zones, ISO 8601, and business-day rules.</text>
-    <g transform="translate(0 250)">
-      <rect width="194" height="56" rx="18" fill="#3DD6D0" fill-opacity="0.14" stroke="#3DD6D0" stroke-opacity="0.4"/>
-      <text x="24" y="36" fill="#E6FFFF" font-size="24" font-family="Avenir Next, SF Pro Text, Helvetica, Arial, sans-serif" font-weight="600">Swift Package</text>
-    </g>
-    <g transform="translate(214 250)">
-      <rect width="156" height="56" rx="18" fill="#FFC454" fill-opacity="0.12" stroke="#FFC454" stroke-opacity="0.35"/>
-      <text x="25" y="36" fill="#FFF7E1" font-size="24" font-family="Avenir Next, SF Pro Text, Helvetica, Arial, sans-serif" font-weight="600">ExampleApp</text>
-    </g>
-  </g>
+  <rect width="1280" height="140" rx="36" fill="url(#glow)"/>
+  <rect x="56" y="56" width="1168" height="528" rx="30" fill="rgba(255,255,255,0.03)" stroke="rgba(255,255,255,0.08)"/>
+  <rect x="86" y="86" width="372" height="468" rx="26" fill="rgba(255,255,255,0.04)" stroke="rgba(255,255,255,0.06)"/>
+  <text x="116" y="164" fill="rgba(255,255,255,0.68)" font-size="22" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">Live preview</text>
+  <text x="116" y="250" fill="white" font-size="72" font-family="SF Pro Display, Avenir Next, Helvetica, Arial, sans-serif" font-weight="700">12:48:36</text>
+  <text x="116" y="296" fill="rgba(255,255,255,0.72)" font-size="28" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">Friday · Week 12 · Workday</text>
+  <rect x="116" y="348" width="312" height="88" rx="20" fill="rgba(0,0,0,0.22)" stroke="rgba(255,255,255,0.05)"/>
+  <text x="144" y="385" fill="rgba(255,255,255,0.64)" font-size="20" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">ISO 8601</text>
+  <text x="144" y="418" fill="white" font-size="24" font-family="SF Mono, Menlo, monospace">2026-03-20T12:48:36Z</text>
+  <rect x="498" y="122" width="1" height="396" fill="rgba(255,255,255,0.08)"/>
+  <text x="548" y="176" fill="rgba(121,190,255,0.95)" font-size="22" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">Open source time toolkit</text>
+  <text x="548" y="256" fill="white" font-size="84" font-family="SF Pro Display, Avenir Next, Helvetica, Arial, sans-serif" font-weight="700">ChronoKit</text>
+  <text x="548" y="320" fill="rgba(255,255,255,0.74)" font-size="30" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">Swift package for formatting, ranges, time zones,</text>
+  <text x="548" y="360" fill="rgba(255,255,255,0.74)" font-size="30" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">ISO 8601, and business-day rules.</text>
+  <rect x="548" y="412" width="170" height="52" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="574" y="445" fill="white" font-size="22" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">Swift Package</text>
+  <rect x="734" y="412" width="146" height="52" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="764" y="445" fill="white" font-size="22" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">ExampleApp</text>
 </svg>
