@@ -20,12 +20,13 @@
   <text x="144" y="385" fill="rgba(255,255,255,0.64)" font-size="20" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">ISO 8601</text>
   <text x="144" y="418" fill="white" font-size="24" font-family="SF Mono, Menlo, monospace">2026-03-20T12:48:36Z</text>
   <rect x="498" y="122" width="1" height="396" fill="rgba(255,255,255,0.08)"/>
-  <text x="548" y="176" fill="rgba(121,190,255,0.95)" font-size="22" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">Open source time toolkit</text>
-  <text x="548" y="256" fill="white" font-size="84" font-family="SF Pro Display, Avenir Next, Helvetica, Arial, sans-serif" font-weight="700">ChronoKit</text>
-  <text x="548" y="320" fill="rgba(255,255,255,0.74)" font-size="30" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">Swift package for formatting, ranges, time zones,</text>
-  <text x="548" y="360" fill="rgba(255,255,255,0.74)" font-size="30" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">ISO 8601, and business-day rules.</text>
-  <rect x="548" y="412" width="170" height="52" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
-  <text x="574" y="445" fill="white" font-size="22" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">Swift Package</text>
-  <rect x="734" y="412" width="146" height="52" rx="18" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
-  <text x="764" y="445" fill="white" font-size="22" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">ExampleApp</text>
+  <text x="540" y="170" fill="rgba(121,190,255,0.95)" font-size="20" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">Open source time toolkit</text>
+  <text x="540" y="244" fill="white" font-size="74" font-family="SF Pro Display, Avenir Next, Helvetica, Arial, sans-serif" font-weight="700">ChronoKit</text>
+  <text x="540" y="304" fill="rgba(255,255,255,0.74)" font-size="26" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">Swift package for formatting, ranges,</text>
+  <text x="540" y="340" fill="rgba(255,255,255,0.74)" font-size="26" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">time zones, ISO 8601, and</text>
+  <text x="540" y="376" fill="rgba(255,255,255,0.74)" font-size="26" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif">business-day rules.</text>
+  <rect x="540" y="424" width="162" height="48" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="564" y="454" fill="white" font-size="20" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">Swift Package</text>
+  <rect x="716" y="424" width="140" height="48" rx="16" fill="rgba(255,255,255,0.06)" stroke="rgba(255,255,255,0.08)"/>
+  <text x="744" y="454" fill="white" font-size="20" font-family="SF Pro Text, Avenir Next, Helvetica, Arial, sans-serif" font-weight="600">ExampleApp</text>
 </svg>
